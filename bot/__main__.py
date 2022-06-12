@@ -65,8 +65,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Repo", "go away")
-    buttons.buildbutton("Support Group", "sad")
+    buttons.buildbutton("go away")
+    buttons.buildbutton("sed")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
